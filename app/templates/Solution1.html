@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Marketing Solution</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="static/css/bootstrap_solution1.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="static/css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="static/css/plugins_solution1/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/index">Home</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Olive Sun <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="/Solution1"><i class="fa fa-fw fa-dashboard"></i> Marketing Solution</a>
+                    </li>
+                    <li>
+                        <a href="/tables"><i class="fa fa-fw fa-table"></i> Tables</a>
+                    </li>
+                    <li>
+                        <a href="/how_it_work"><i class="fa fa-fw fa-file"></i> How It Works</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="#">Dropdown Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Dropdown Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Selective Impression Advertising <small>Marketing Strategy</small>
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li class="active">
+                                <i class="fa fa-dashboard"></i> Marketing Solution
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert alert-info alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            <i class="fa fa-info-circle"></i>  <strong>Like Marketing Solution? </strong> Try out <a href="/Solution2" class="alert-link">Improvement Solution! </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <!-- Morris Charts -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="lead">By knowing who are similar users to customers who already liked your restaurants, you can narrow down targeted population for your impressions, and
+                          increase conversion rate and reviewers of your restaurant.</p>
+                          <p><a href="/how_it_work"> How It Works?</a></p>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="panel panel-yellow">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-fw fa-user"></i> Distribution of 10000 Impressions</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-donut-chart"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Comparison of Yelp Advertising Schemes</h3>
+                          </div>
+                          <div class="panel-body">
+                              <div class="table-responsive">
+                                  <table class="table table-bordered table-hover table-striped">
+                                      <thead>
+                                          <tr>
+                                              <th>Scheme</th>
+                                              <th>Impression</th>
+                                              <th>Cost per Click</th>
+                                              <th>5+ Users Impression</th>
+                                              <th>10+ Users Impression</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td>Cost</td>
+                                              <td>$1000</td>
+                                              <td>$327</td>
+                                              <td>$1000</td>
+                                              <td>$1000</td>
+                                          </tr>
+                                          <tr>
+                                              <td>What you Get</td>
+                                              <td>10000 Impressions</td>
+                                              <td>100 clicks</td>
+                                              <td>10000 Selective Impressions</td>
+                                              <td>10000 Selective Impressions</td>
+                                          </tr>
+                                          <tr>
+                                              <td>Cost per Click</td>
+                                              <td>$5</td>
+                                              <td>$3.27</td>
+                                              <td>$1.73</td>
+                                              <td>$0.93</td>
+                                          </tr>
+                                          <tr>
+                                              <td>Cost per Customer</td>
+                                              <td>$100</td>
+                                              <td>$65</td>
+                                              <td>$35</td>
+                                              <td>$19</td>
+                                          </tr>
+                                          <tr>
+                                              <td>Cost per Reviewer</td>
+                                              <td>$500</td>
+                                              <td>$327</td>
+                                              <td>$173</td>
+                                              <td>$93</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                              <div class="text-left">
+                                  <p><i class="fa fa-arrow-circle-right"></i> Here we assume an optimistic 2% Click
+                                  Through Rate, 5% Conversion Rate from these clicks, and 1 out of 5 customers actually
+                                  leaves a review after visiting</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                   <div class="col-lg-4">
+                      <div class="panel panel-red">
+                          <div class="panel-heading">
+                              <h3 class="panel-title"><i class="fa fa-fw fa-money"></i> Comparison of Marketing Schemes</h3>
+                          </div>
+                          <div class="panel-body">
+                              <div id="morris-bar-chart"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Similar Users Marketing Strategy Compared to Baseline</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-line-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <!-- <div class="col-lg-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="fa fa-fw fa-money"></i> Line Graph Example with Tooltips</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="morris-area-chart"></div>
+                            <div class="text-right">
+                                <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- /row -->
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="static/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="static/js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="static/js/plugins/morris/raphael.min.js"></script>
+    <script src="static/js/plugins/morris/morris.min.js"></script>
+    <script src="static/js/plugins/morris/morris-data.js"></script>
+
+</body>
+
+</html>
